@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>Contact Page</title>
+</head>
+
+
+
+<body>
+    <!-- background image -->
+    <div class="bg-image"></div>
+
+    <!-- Header -->
+    <div class="topScreen">
+        <nav>
+            <div class="logo">
+                <a href="index.html"> <img src="./images/logo3.png" alt="Volpe Cafe"></a>
+            </div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </span>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- grid that contains the form and picture -->
+    <div id="formcontainer">
+        <div id="sideimage"></div>
+        <img src="images/logo3.png" id="logo">
+        <form>
+            <label for="fname"> Full Name: </label>
+            <input type="text" class="name">
+            <label for="lname"> Recipe Name: </label>
+            <input type="text" class="name">
+            <label for="feedback"> Leave a rating/review! </label>
+            <textarea name="feedback" id="feedback"></textarea>
+            <input id="submit" type="button" value="Submit">
+        </form>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <hr>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-snapchat-ghost"></i>
+        <i class="fab fa-tiktok"></i>
+        <hr>
+        <p class="contact"> Phone: (888)888-8888</p>
+        <p class="contact"> @Volpe Cafe Second Street District Austin, TX 78701 </p>
+    </div>
+
+
+</body>
+<script src="app.js"></script>
+
+</html>

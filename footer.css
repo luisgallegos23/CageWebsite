@@ -1,0 +1,47 @@
+/* .footer {
+    height: 25%;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 97%;
+    text-align: center;
+    padding-top: 1.5em;
+    line-height: 1.5;
+    border: black solid 5px;
+    color: white;
+    ;
+} */
+
+
+@media screen and (max-width:800px) {
+    .footer {
+        /* position: absolute; */
+        padding: 10px 10px 5px 10px;
+        bottom: 0;
+        margin-left: -10px;
+        width: 100%;
+        margin-bottom: -5%;
+        /* Height of the footer*/
+        height: auto;
+        text-align: center;
+        background: black;
+        color: white;
+    }
+}
+
+@media screen and (min-width:801px) {
+    .footer {
+        /* position: absolute; */
+        padding: 10px 10px 5px 10px;
+        bottom: 0;
+        margin-left: -10px;
+        width: 100%;
+        margin-bottom: -5%;
+        /* Height of the footer*/
+        height: auto;
+        text-align: center;
+        background: black;
+        color: white;
+    }
+}

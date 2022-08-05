@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="recipes.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <div id="loader"></div>
+    <div class="content">
+        <!-- Header -->
+            <div class="topScreen">
+                <nav>
+                    <div class="logo">
+                        <a href="index.html"> <img src="./images/logo3.png" alt="Volpe Cafe"></a>
+                    </div>
+                    <div class="openMenu"><i class="fa fa-bars"></i></div>
+                    <ul class="mainMenu">
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <div class="closeMenu"><i class="fa fa-times"></i></div>
+                        <span class="icons">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                        </span>
+                    </ul>
+                </nav>
+            </div>
+        <div class="content-wrap">
+            <div class="recipe-links">
+                <h2> Explore: </h2>
+                <ul>
+                    <li class="list-action" onclick="getRecipesByName('Breakfast')"> Breakfast </li>
+                    <li class="list-action" onclick="getRecipesByName('pasta')"> Lunch </li> 
+                    <li class="list-action" onclick="getRecipesByName('dessert')"> Desserts </li>
+                    <li class="list-action" onclick="getRecipesByName('latte')"> Lattes </li>
+                    <li class="list-action" onclick="getRecipesByName('drink')"> Refreshers </li>
+                    
+                </ul>
+                
+            </div>
+            <form>
+            <div class="dropdown-menu">
+                <select name="Explore" id="plate">
+                   <option value='pasta'> Lunch </option>
+                    <option value='dessert'> Desserts </option>
+                    <option value='latte'> Lattes </option>
+                    <option value='drink'> Refreshers </option>
+                    <option value='breakfast'> Breakfast </option>
+                </select>
+            </div>
+            <button id="explore" type="button" onclick="getRecipesBy()">Explore</button>
+            </form>
+            
+            <!-- List of Recipes -->
+            <div id="recipe-grid">
+                <!-- JS inpute recipes -->
+            </div>
+            
+        </div>    
+            <!-- Footer -->
+            <div class="footer">
+                <hr>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-snapchat-ghost"></i>
+                <i class="fab fa-tiktok"></i><hr>
+                <p class="contact"> Phone: (888)888-8888</p>
+                <p class="contact"> @Volpe Cafe Second Street District Austin, TX 78701 </p>
+            </div>
+    </div>
+</body>
+    <script src="app.js"></script>
+</html>

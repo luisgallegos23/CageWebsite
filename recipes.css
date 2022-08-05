@@ -1,0 +1,240 @@
+
+body {
+  font-family: 'Bookman, URW Bookman L, serif';
+}
+
+.content{
+  position: relative;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.content-wrap{
+  position: relative;
+  padding-bottom: 15rem;
+}
+
+.footer{
+  height: 12rem;
+  background-color: #000;
+  position:absolute;
+  left: 0;
+  width: 100%;
+  top: 97%;
+  text-align:center;
+  padding-top: 1.5em;
+  line-height: 1.5;
+  border: black solid 5px;
+  bottom: 0;
+  color: white;
+  z-index: 1;
+}
+
+.fab{
+  margin-top: 5%;
+  text-align: center;
+  text-decoration: none;
+  margin: 0.5em;
+  display: inline-block;
+  font-size: 35px;
+}
+
+.fa-facebook:hover {
+  color: rgb(70, 120, 219);
+}
+
+.fa-twitter:hover {
+  color: #55ACEE;
+}
+
+.fa-instagram:hover {
+  color: palevioletred;
+}
+
+.fa-snapchat-ghost:hover {
+  color: #fffc00;
+}
+
+.fa-tiktok:hover{
+  background: #000;
+  text-shadow: 2px 3px #fe2d52, -1px -3px #55acee;
+}
+.contact{
+  font-size: 15px;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    border: 1px solid black;
+    height: 300px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.details{
+    padding: 0;
+}
+
+.details h4{
+    font-weight: 300;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    text-align: center;;
+}
+
+.details a{
+  color: black;
+}
+
+.details a:hover{
+  color: #48392A; 
+}
+
+.tumb{
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.thumb-img{
+    max-width: 100%;
+    max-height: 100%;
+    flex-shrink: 3;
+}
+
+.recipe-details{
+    overflow: hidden;
+    border-top: 1px solid black;
+    float: left;
+    width: 100%;
+    text-align: center;
+    line-height: 0.5;
+}
+
+.recipe-details p{
+    display: inline-block;
+    margin-left: 3px;
+    transition: 0.3s;
+    font-size: 17px;
+} 
+
+#loader {
+    border: 16px solid white;
+    border-radius: 50%;
+    border-top: 16px solid black;
+    width: 90px;
+    height: 90px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    z-index: 1;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  
+
+  @media only screen and (min-width: 600px){
+    #recipe-grid{
+    top: 7rem;
+    position:relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px,300px));
+    column-gap: 2.5em;
+    row-gap: 1em;
+    left: 60%;
+    transform: translate(-50%);
+    width: 85%;
+    padding-bottom: 15rem;
+    }
+
+    .recipe-links{
+    position: absolute;
+    width: 15%;
+    top: 7.5rem;
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding-left: 0;
+    height: 100%;
+    line-height: 1.25;
+    border-right: 2px black solid;
+    background-color: white;
+  }
+
+  .recipe-links ul,li{
+    list-style-type: none;
+    list-style-position: inside;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+  }
+
+  .dropdown-menu{
+    display: none;
+  }
+  }
+
+  @media only screen and (max-width:600px){
+    #recipe-grid{
+        top: 9rem;
+        position:relative;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(275px,300px));
+        left: 50%;
+        transform: translate(-50%);
+        row-gap: 1.25em;
+        width: 300px;
+        padding-bottom: 7.5rem;
+    }
+
+    .recipe-links{
+        display: none;
+    }
+
+    #explore{
+      position: absolute;
+      top: 6.54rem;
+      left: 70%;
+      height: 25px;
+      width: 90px;
+      border: black solid 1px;
+      border-radius: 5px;
+    }
+
+    .dropdown-menu{
+        top: 6.5rem;
+        position: absolute;
+        width: 100%;
+    }
+
+    .dropdown-menu select{
+        position: absolute;
+        width: 50%;
+        font-size: 20px;
+        text-align: center;
+        left: 40%;
+        transform: translate(-50%);
+    }
+    
+  }

@@ -1,0 +1,133 @@
+body {
+    background-color: rgb(222, 222, 222);
+}
+
+.about-1 {
+    margin: 30px;
+    padding: 5px;
+}
+
+.about-1 h1 {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.about-1 p {
+    text-align: center;
+    padding: 3px;
+    color: #000;
+}
+
+.container {
+    display: flex;
+}
+
+.about-item {
+    grid-row: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 55px 20px;
+    width: 85rem;
+    margin: 45px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0.6);
+}
+
+.about-item i {
+    display: inline-block;
+    font-size: 43px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    /* position: relative; */
+
+}
+
+.about-item h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+}
+
+.about-item hr {
+    width: 46px;
+    height: 3px;
+    background-color: #5fbff9;
+    margin: auto;
+}
+
+.about-item p {
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.about-item:hover {
+    background-color: black;
+    border: 5px;
+    /* border-style: solid;
+    border: color #333; */
+}
+
+
+
+.about-item:hover h3,
+.about-item:hover p {
+    color: white;
+    width: 100%;
+    /* box-shadow: 0 0 9px black; */
+}
+
+.about-item:hover hr {
+    background-color: rgb(186, 135, 89);
+}
+
+.about-item:hover i {
+    color: white;
+    transform: translateY(-20px);
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover hr {
+    transition: all 400ms ease-in-out;
+}
+
+@media(max-width:900px) {
+
+    .about-1 {
+        margin: auto;
+        padding: 30px;
+    }
+
+
+    .container {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-gap: 10px;
+        /* background-color: blue; */
+        padding: 10px;
+        width: 85%;
+        margin: auto;
+        /* left: 50%;
+        transform: translate(-5%); */
+
+    }
+
+    .about-item {
+        grid-row: auto;
+        /* left: 50%;
+        transform: translate(-2%); */
+        background-color: white;
+        /* padding: 55px 20px; */
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2%;
+        box-shadow: 10px 10px 9px rgba(0, 0, 0.6);
+    }
+
+
+}
