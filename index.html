@@ -1,14 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
+
+<div id="recipe-grid">
+
+</div>
+
 <body>
-    <h1> Hello World!</h1>
-    <p> why is this not workign
-    </p>
+    <div class="topScreen">
+        <nav>
+            <div class="logo">
+                <a href="index.html"> <img src="./images/logo3.png" alt="Volpe Cafe"></a>
+            </div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-snapchat-ghost"></i>
+                </span>
+            </ul>
+        </nav>
+    </div>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+
+    <main class="page">
+        <header class="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1>Volpe Cafe </h1>
+
+                    <h4>'Greatness Within a Click'</h4>
+                </div>
+            </div>
+        </header>
+        <!-- recipes container -->
+        <section class="recipes-container">
+            <!-- Volpe Favorites -->
+            <div class="favorites-container">
+                <h2>~Volpe Favorites~</h2>
+                <br>
+                <i class="fa fa-star"></i>
+                <br>
+
+                <div class="reviewFav-link">
+                    <a href="contact.html">
+                        <div class="p">
+                            <p>Rate your favorite recipe, too!
+                                !Click Here!</p>
+                        </div>
+
+
+                    </a>
+                    <h2>~This Week's Favorites~</h2>
+                </div>
+            </div>
+
+
+            <!-- favorite list -->
+            <div class="favorites-list">
+
+                <!-- single recipe  -->
+                <a href="single.recipe.html#####" class="recipe">
+                    <img src="https://www.jessicagavin.com/wp-content/uploads/2019/08/chicken-alfredo-8-1200.jpg"
+                        alt="img of recipe" class="img recipe-img" />
+                    <h3>Chicken Alfredo</h3>
+                    <p>Prep:15 min | cook: 10min
+                        <div class="rating">
+
+                            <label>☆</label>
+                            <label>★</label>
+                            <label>★</label>
+                            <label>★</label>
+                            <label>★</label>
+
+                        </div>
+                    </p>
+                </a> <a href="single.recipe.html#####" class="recipe">
+                    <img src="https://www.simplyrecipes.com/thmb/kIO5eBT7EQrQTqbU2VJwuK-3fPQ=/1229x1229/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2010__10__quick-mac-cheese-horiz-a-1800-2086266fbc1b48a28a575b793d2926fd.jpg"
+                        alt="img of recipe" class="img recipe-img" />
+                    <h3>Mac & Cheese</h3>
+                    <p>Prep:10 min | cook: 10min <div class="rating">
+
+                            <label>★</label>
+                            <label>★</label>
+                            <label>★</label>
+                            <label>★</label>
+                            <label>★</label>
+                        </div>
+                    </p>
+                </a> <a href="single.recipe.html#####" class="recipe">
+                    <img src="https://static.onecms.io/wp-content/uploads/sites/9/2021/05/19/urdaburger-FT-RECIPE0621.jpg"
+                        alt="img of recipe" class="img recipe-img" />
+                    <h3>Boss Burger</h3>
+                    <p>Prep:20 min | cook: 30min <div class="rating">
+
+                            <label>☆</label>
+                            <label>★</label>
+                            <label>★</label>
+                            <label>★</label>
+                            <label>★</label>
+                        </div>
+                    </p>
+                </a> <a href="single.recipe.html#####" class="recipe">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_lossy,ret_img,w_700,h_700/https://www.livinglocurto.com/wp-content/uploads/2012/09/Glow-in-the-Dark-Cotton-Candy-Glow-Sticks-700x700.jpg"
+                        alt="img of recipe" class="img recipe-img" />
+                    <h3>Cotton Candy</h3>
+                    <p> Prep:15 min | cook: 100min <div class="rating">
+
+                            <label>☆</label>
+                            <label>☆</label>
+                            <label>★</label>
+                            <label>★</label>
+                            <label>★</label>
+                        </div>
+                    </p>
+                </a>
+            </div>
+
+        </section>
+    </main>
+
+    <div class="footer">
+        <hr>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-snapchat-ghost"></i>
+        <i class="fab fa-tiktok"></i>
+        <hr>
+        <p class="contact"> Phone: (888)888-8888</p>
+        <p class="contact"> @Volpe Cafe Second Street District Austin, TX 78701 </p>
+    </div>
+
 </body>
+<script src="app.js"></script>
+
 </html>

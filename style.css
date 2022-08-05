@@ -19,7 +19,7 @@ nav {
     color: white;
     display: flex;
     justify-content: space-between;
-    border-bottom: 5px solid #333;
+    border-bottom: 2px solid black;
 }
 
 .topScreen {

@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(222, 222, 222);
+    background-color: white;
 }
 
 main {
@@ -8,19 +8,16 @@ main {
     margin-right: -10px;
 }
 
-/* img {
+img {
     max-width: 100%;
     height: auto;
-} */
+}
 
 .hero {
     height: 40vh;
-    background: url('/images/coffeefriends.jpeg') center/cover no-repeat;
+    background: url('./images/coffeefriends.jpeg') center/cover no-repeat;
     margin-bottom: 2rem;
     border-radius: var(--borderRadius);
-    /* position: relative; */
-    border: solid #333 4px;
-    box-shadow: black 5px 5px 5px 0px;
 }
 
 .hero-container {
@@ -94,7 +91,7 @@ main {
 }
 
 
-.favorites-list {
+#favorites-list {
     display: grid;
     gap: 2rem 1rem;
     padding: 3rem;
@@ -121,7 +118,7 @@ main {
     transition: all 400ms ease-in-out;
 }
 
-.favorites-list {
+#favorites-list {
     display: grid;
     width: auto;
     grid-template-columns: 1fr;

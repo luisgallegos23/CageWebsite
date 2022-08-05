@@ -29,6 +29,7 @@
                     </div>      
                 </div> `)
             document.getElementById('recipe-grid').innerHTML += item;
+            document.getElementById('favorites-list').innerHTML += item;
         });
     });
     
